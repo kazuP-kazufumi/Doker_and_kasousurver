@@ -1,0 +1,49 @@
+Last login: Mon Feb 10 21:56:57 on ttys000
+kzfmmacpc@KZFMMacPC ~ % cd p_playground/pro_Work/docker_and_kasousurver_kanzennyuumon 
+kzfmmacpc@KZFMMacPC docker_and_kasousurver_kanzennyuumon % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   sample_program_docker/chap4/flask/Dockerfile
+	modified:   sample_program_docker/chap4/flask/compose.yaml
+
+kzfmmacpc@KZFMMacPC docker_and_kasousurver_kanzennyuumon % git commit -m'ポートbん号の変更'
+[main b489f39] ポートbん号の変更
+ Committer: 大崎    一史 <kzfmmacpc@KZFMMacPC.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+kzfmmacpc@KZFMMacPC docker_and_kasousurver_kanzennyuumon % git push origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 727 bytes | 727.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:kazuP-kazufumi/Doker_and_kasousurver.git
+   ec75d1e..b489f39  main -> main
+kzfmmacpc@KZFMMacPC docker_and_kasousurver_kanzennyuumon % git rebase -i HEAD~1
+
+hint: Waiting for your editor to close the file... 
+pick b489f39 ポート番号の変更bん号の変更
+
+# Rebase ec75d1e..b489f39 onto ec75d1e (1 command)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+#                    commit's log message, unless -C is used, in which case
+
